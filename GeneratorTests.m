@@ -224,7 +224,7 @@ void TestHTTP(void)
 {
     NSInputStream *is;
     NSOutputStream *os;
-    [NSStream getStreamsToHost: [NSHost hostWithName: @"www.google.com"] port: 80 inputStream: &is outputStream: &os];
+    [NSStream getStreamsToHostWithName: @"www.google.com" port: 80 inputStream: &is outputStream: &os];
     
     [is open];
     [os open];
